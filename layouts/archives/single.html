@@ -9,7 +9,7 @@
       <article role="article" id="blog-archives">
         <table class="archives">
           <tbody>
-            {{ range (where (where .Site.Pages ".Section" "post") "Kind" "page") }}
+            {{ range (where (where .Site.Pages ".Section" "in" site.Params.archiveSections) "Kind" "page") }}
               <tr>
                 <td>
                   {{ .Date | dateFormat "2006" }}&nbsp;{{ .Date | dateFormat "Jan" }}&nbsp;{{ .Date | dateFormat "2" }}
