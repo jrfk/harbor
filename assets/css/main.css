@@ -540,6 +540,10 @@ footer em {
     border-radius: 4px;
     margin: 0 0 16px;
 }
+.link-card:hover{
+  border: 1px solid #c5c5c5;
+}
+
 .link-card a{
     color: inherit;
     cursor: pointer;
