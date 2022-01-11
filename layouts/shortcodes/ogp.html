@@ -14,20 +14,30 @@
 
 <div class="link-card">
     <a href="{{ $url }}" rel="noopener noreferrer nofollow" target="_blank">
+        {{- if ne $title nil -}}
         <strong class="link-card-title">
             {{ $title }}
         </strong>
+        {{ else }}
+        <strong class="link-card-title">
+            {{ $siteName }}
+        </strong>
+        {{- end -}}
+        {{- if ne $description nil -}}
         <em class="link-card-description">
             {{ $description }}
         </em>
+        {{- end -}}
         <em class="link-card-url">
             {{ $hostname }}
         </em>
     </a>
+    {{- if ne $image nil -}}
     <a class="link-card-image"
         href="{{ $url }}"
         rel="noopener noreferrer nofollow"
         style="background-image: url('{{ $image }}');"
         target="_blank">
     </a>
+    {{- end -}}
 </div>

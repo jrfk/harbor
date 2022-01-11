@@ -538,7 +538,7 @@ footer em {
     display: table;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
-    margin: 0 10px 16px 10px;
+    margin: 0 0 16px;
 }
 .link-card a{
     color: inherit;
