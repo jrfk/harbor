@@ -532,3 +532,84 @@ footer em {
     margin-top: 40px;
   }
 }
+.link-card{
+    color: #222;
+    width: 100%;
+    display: table;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    margin: 0 10px 16px 10px;
+}
+.link-card a{
+    color: inherit;
+    cursor: pointer;
+    width: 100%;
+    display: table-cell;
+    padding: 16px;
+    vertical-align: middle;
+}
+.link-card-title{
+    line-height: 1.5;
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "kern";
+    font-kerning: normal;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    margin-bottom: 8px;
+    font-weight: 700;
+    word-break: break-all;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.link-card-description {
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "kern";
+    font-kerning: normal;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
+    font-style: normal;
+    margin-bottom: 4px;
+    line-height: 1.5;
+    font-size: 12px;
+    display: -webkit-box;
+    max-height: 3em;
+    overflow: hidden;
+    color: #6f7372;
+}
+.link-card-url{
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "kern";
+    font-kerning: normal;
+    pointer-events: auto;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
+    font-style: normal;
+    display: block;
+    line-height: 1.5;
+    font-size: 12px;
+    color: #222;
+}
+.link-card-image{
+    cursor: pointer;
+    background-repeat: no-repeat;
+    border-radius: 0 3px 3px 0;
+    min-width: 220px;
+    background-position: 50%;
+    background-size: cover;
+    border-left: 1px solid #f2f2f2;
+    display: table-cell;
+    padding: 16px;
+    vertical-align: middle;
+}
+@media screen and (max-width: 480px) {
+    .link-card-image{
+        display: flex;
+        min-width: 120px;
+        background-size:contain;
+    }
+}

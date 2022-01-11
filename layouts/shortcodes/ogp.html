@@ -1,0 +1,33 @@
+{{ $url := .Get 0 }}
+
+{{ $jsonData := getJSON $.Page.Site.Params.OgpApiEndpoint $url }}
+{{ $siteName := $jsonData.siteName }}
+{{ $title := $jsonData.title }}
+{{ $description := $jsonData.description }}
+{{ $descriptionShort := $jsonData.descriptionShort }}
+{{ $image := $jsonData.image }}
+{{ $urlInfo := urls.Parse $url }}
+{{ $host := printf "%s://%s" $urlInfo.Scheme $urlInfo.Host }}
+{{ $hostname := $urlInfo.Host }}
+{{ $prefix := "https://www.google.com/s2/favicons?domain=" }}
+{{ $favicon := printf "%s%s" $prefix $urlInfo.Host }}
+
+<div class="link-card">
+    <a href="{{ $url }}" rel="noopener noreferrer nofollow" target="_blank">
+        <strong class="link-card-title">
+            {{ $title }}
+        </strong>
+        <em class="link-card-description">
+            {{ $description }}
+        </em>
+        <em class="link-card-url">
+            {{ $hostname }}
+        </em>
+    </a>
+    <a class="link-card-image"
+        href="{{ $url }}"
+        rel="noopener noreferrer nofollow"
+        style="background-image: url('{{ $image }}');"
+        target="_blank">
+    </a>
+</div>
