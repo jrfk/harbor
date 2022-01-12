@@ -611,9 +611,19 @@ footer em {
     vertical-align: middle;
 }
 @media screen and (max-width: 480px) {
-    .link-card-image{
-        display: flex;
-        min-width: 120px;
-        background-size:contain;
-    }
+  .link-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .link-card a{
+    display: block;
+    width: auto;
+  }
+  .link-card-image{
+      min-width: 120px;
+      min-height: 150px;
+      background-size: cover;
+      padding: 0;
+      
+  }
 }
