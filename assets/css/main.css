@@ -539,7 +539,6 @@ footer em {
 .link-card-title{
     line-height: 1.5;
     word-wrap: break-word;
-    -webkit-font-smoothing: antialiased;
     font-feature-settings: "kern";
     font-kerning: normal;
     cursor: pointer;
@@ -548,7 +547,7 @@ footer em {
     margin: 0;
     box-sizing: inherit;
     margin-bottom: 8px;
-    font-weight: 700;
+    font-weight: 600;
     word-break: break-all;
     display: -webkit-box;
     overflow: hidden;
@@ -557,7 +556,6 @@ footer em {
 }
 
 .link-card-description {
-    -webkit-font-smoothing: antialiased;
     font-feature-settings: "kern";
     font-kerning: normal;
     font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
